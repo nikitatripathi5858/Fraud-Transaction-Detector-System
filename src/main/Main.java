@@ -13,7 +13,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        // ⭐ MULTIPLE USERS STORAGE
+        //  MULTIPLE USERS STORAGE
         Map<String, UserProfile> users = new HashMap<>();
 
         DecisionEngine engine = new DecisionEngine();
@@ -48,7 +48,7 @@ public class Main {
                     txnId, userId, amount, location, deviceId, LocalDateTime.now()
             );
 
-            // ⭐ MULTI-USER LOGIC
+            //  MULTI-USER LOGIC
             users.putIfAbsent(userId, new UserProfile(userId));
             UserProfile user = users.get(userId);
 
