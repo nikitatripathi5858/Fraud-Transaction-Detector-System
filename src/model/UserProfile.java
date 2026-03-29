@@ -35,7 +35,7 @@ public class UserProfile {
     public Set<String> getKnownDevices() { return knownDevices; }
     public List<Transaction> getTransactionHistory() { return transactionHistory; }
 
-    // ⭐ NEW METHOD
+    //  NEW METHOD
     public int getTransactionCount() {
         return transactionHistory.size();
     }
